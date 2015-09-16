@@ -1,0 +1,27 @@
+<core:View controllerName="com.tammenit.smarttbl.view.Master" 
+		xmlns:core="sap.ui.core" 
+		xmlns:l="sap.ui.layout" 
+		xmlns:table="sap.ui.table"
+		xmlns:smartTable="sap.ui.comp.smarttable"
+		xmlns="sap.m">
+	<Page id="productListPage" navButtonPress="onNavBack" showNavButton="true" title="{i18n>masterTitle}">
+		<content>
+            <smartTable:SmartTable
+                    id="PersonSmartTable"
+                    entitySet="Persons"
+                    tableType="Table"
+                    useExportToExcel="false"
+                    useVariantManagement="false"
+                    useTablePersonalisation="true"
+                    header="The Persons"
+                    showRowCount="true"
+                    enableAutoBinding="true">
+                <!-- layout data used to make the table growing but the filter bar fixed -->
+                <smartTable:layoutData>
+                    <FlexItemData growFactor="1"/>
+                </smartTable:layoutData>
+            </smartTable:SmartTable>
+		</content>
+		<footer></footer>
+	</Page>
+</core:View>
