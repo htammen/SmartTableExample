@@ -36,6 +36,10 @@
                 <Annotation Term="com.sap.vocabularies.UI.v1.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PersonID"/>
+                            <Annotation Term="UI.Importance" EnumMember="UI.Importance/High"/>
+                        </Record>
+                        <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="FirstName"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.Importance/High"/>
                         </Record>

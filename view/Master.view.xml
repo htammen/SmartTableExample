@@ -9,7 +9,7 @@
             <smartTable:SmartTable
                     id="PersonSmartTable"
                     entitySet="Persons"
-                    tableType="Table"
+                    tableType="ResponsiveTable"
                     useExportToExcel="false"
                     useVariantManagement="false"
                     useTablePersonalisation="true"
